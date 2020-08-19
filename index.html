@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corona-virus</title>
+    
+		<link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      
+.search-box {
+	position: relative;
+}
+.search-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+@media(max-width:600px){
+  .corona-news{
+    margin-left:20%;
+  }
+  
+}
+@media(max-width:450px){
+  .corona-news{
+    margin-left:10%;
+  }
+  
+}
+.card-header{
+  background-color: green;
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.card-body{
+  background-color: gray;
+  color: white;
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <div class="search-bar col-lg-6 mx-auto">
+      <h1 class="text-center mt-5">CoronaVirus Update</h1>
+      <div class="search-box my-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Country Name"
+        />
+        <button class="btn btn-success search-btn">
+          Search
+        </button>
+      </div>
+    </div>
+
+
+     <div class="corona-news">
+        
+      <div class="row text-center">
+        <div class="col-md-4">
+         <div class="card border-success mb-3" style="max-width: 18rem;">
+             <div class="card-header border-success">todayCases</div>
+             <div class="card-body ">
+               <p class="card-text todayCases"></p>
+             </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card border-success mb-3" style="max-width: 18rem;">
+             <div class="card-header border-success">todayDeaths</div>
+             <div class="card-body ">
+               <p class="card-text todayDeaths"></p>
+             </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card border-success mb-3" style="max-width: 18rem;">
+             <div class="card-header border-success">totalTests</div>
+             <div class="card-body ">
+               <p class="card-text totalTests"></p>
+             </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+     <div class="col-md-4">
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header border-success">active</div>
+          <div class="card-body ">
+            <p class="card-text active"></p>
+          </div>
+        </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header border-success">cases</div>
+          <div class="card-body ">
+            <p class="card-text cases"></p>
+          </div>
+        </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header border-success">deaths</div>
+          <div class="card-body ">
+            <p class="card-text deaths"></p>
+          </div>
+        </div>
+     </div>
+ </div>
+</div>
+
+     </div>
+
+    
+	<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
